@@ -1,0 +1,23 @@
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.vcxproj*
+*.sln
+*.exe
+*.psess
+*.log
+.vs/
+x64/
+CMakeCache.txt
+CmakeFiles/
+Win32/
+cmake_install.cmake
+test.dir/
+Debug/
+_temp/
+enc_temp_folder/
