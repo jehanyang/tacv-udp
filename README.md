@@ -6,11 +6,11 @@ tacv-udp is a library to use with the Tactilus insole pressure sensor API in ord
 tacv-udp supports Windows sending and Linux receiving via UDP. This repo is for the Windows portion. 
 
 0. Receive the Tactilus SDK, which contains 2 `.dll` files, 1 `.lib` file, a `.h` file which describes the original available functions and their uses, and a simple `test.cpp` file for testing the library. 
-1. First install Visual Studio for Windows.
-2. Then run this in `cmd` terminal in the folder you want which also has the Tactilus SDK files. 
+1. First install Visual Studio for Windows and Git Bash. 
+2. Then run this in `git bash` terminal in the folder you want which also has the Tactilus SDK files. 
 ```
 git clone git@github.com:jehanyang/tacv-udp.git
-cd tacv-udp/SDK
+cd tacv-udp/
 cmake CMakeLists.txt -G "Visual Studio [your version here]" -A Win32
 ```
 This generates all the Visual Studio project builds.
