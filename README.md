@@ -19,7 +19,7 @@ This generates all the Visual Studio project builds.
 
 4. Optional: Put in "Release" mode if you want it to run fast.
 
-5. In right sidebar, first double click `testTwoSensors`. Then `Build->Build Solution` and the code will run.
+5. In right sidebar, first double click `testTwoSensors`. Then `Build->Build Solution` and the code will build.
 
 6. At the bottom of VS you should see it say succeed. It will drop it into a "Release" folder, but because the libraries need to be in the same folder, just cut and paste it into the root (I'm sure you can manually specify the build location somewhere to not have to do this every time)
 
