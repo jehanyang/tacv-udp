@@ -23,4 +23,20 @@ This generates all the Visual Studio project builds.
 
 6. At the bottom of VS you should see it say succeed. It will drop it into a "Release" folder, but because the libraries need to be in the same folder, just cut and paste it into the root (I'm sure you can manually specify the build location somewhere to not have to do this every time)
 
-7. You can then open a `cmd` terminal, navigate to the folder, and just type `testTwoSensors.exe` to run it.
+7. Connect the Windows computer to the Linux computer via Ethernet cable (USB can also work). On Windows: 
+
+`View Network Connections >> Right Click Ethernet 1>> Properties >> ipv4 than change the IP address to 10.7.0.1, subnet mask to 255.255.0.0, default dns address to 8.8.8.8`
+
+On Linux set the Ethernet static IP address as 10.7.0.11. On Debian you would do this:
+```
+$ sudo vim /etc/network/interfaces
+$  # add the following code block or adjust the already existent eth0 interface:
+$  # auto eth0
+$  # iface eth0 inet static
+$  #     address 10.7.0.11/24
+$  #     gateway 10.7.0.1
+$ ifdown eth0
+$ ifup eth0
+```
+
+8. You can then open a `cmd` terminal, navigate to the folder, and just type `testTwoSensors.exe` to run it.
